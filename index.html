@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Foody - For Food Business</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Montserrat&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- Sprites -->
+    <svg style="display: none;">
+      <symbol id="facebook" viewBox="0 0 24 24">
+        <g>
+          <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/>
+        </g>
+      </symbol>
+      <symbol id="twitter" viewBox="0 0 512 512">
+        <g>
+          <g>
+            <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+              c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+              c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+              c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+              c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+              c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+              C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+              C480.224,136.96,497.728,118.496,512,97.248z"/>
+          </g>
+        </g>
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 512 512">
+        <g>
+          <g>
+            <path d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160
+              C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48
+              h192c61.76,0,112,50.24,112,112V352z"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <path d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336
+              c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <circle cx="393.6" cy="118.4" r="17.056"/>
+          </g>
+        </g>
+      </symbol>
+      <symbol id="down" viewBox="0 0 511.997 511.997">
+        <g>
+          <g>
+            <path d="M511.228,134.699c-1.615-4.052-5.542-6.698-9.896-6.698h-42.667c-2.729,0-5.354,1.042-7.333,2.927L255.999,315.97
+              L60.665,130.928c-1.979-1.885-4.604-2.927-7.333-2.927H10.665c-4.354,0-8.281,2.646-9.896,6.698
+              c-1.625,4.042-0.625,8.667,2.521,11.677l245.333,234.667c4.125,3.938,10.625,3.938,14.75,0l245.333-234.667
+              C511.853,143.366,512.853,138.741,511.228,134.699z"/>
+          </g>
+        </g>
+      </symbol>
+    </svg>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header__inner">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="site logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Welcome</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#video">Video tour</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                  </ul>
+                  <ul class="social d-flex justify-content-between">
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <svg class="social__icon facebook">
+                          <use xlink:href="#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <svg class="social__icon twitter">
+                          <use xlink:href="#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a href="#" class="social__link">
+                        <svg class="social__icon instagram">
+                          <use xlink:href="#instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__content">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-xl-8 m-auto d-flex flex-column align-items-center">
+              <h1 class="header__title">It's a Food Adventure.</h1>
+              <p class="header__subtitle">
+                <span>You'll Never Put A Better</span>
+                Bit Of Food On Your Knife.
+              </p>
+              <button class="btn header__btn">Our Menu</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--/ Header -->
+
+    <main class="main">
+      <!-- Story -->
+      <section class="story">
+        <div class="story__inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 col-xl-10 m-auto">
+                <article class="story__item d-flex flex-column-reverse flex-md-row">
+                  <div class="story__img">
+                    <img src="img/food01.jpg" alt="food image">
+                  </div>
+                  <div class="story__content">
+                    <h3 class="story__title">Story Of Us</h3>
+                    <p class="story__text">
+                      Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                      Cras ultricies ligula sed magna dictum porta. Donec
+                      sollicitudin molestie malesuada.
+                    </p>
+                    <button class="btn story__btn">More</button>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--/ Story  -->
+
+      <!-- Quote -->
+      <section class="quote d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-8 m-auto">
+              <p class="quote__title">“The most romantic restaurant out there”</p>
+              <div class="quote__author">John Doe</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--/ Quote  -->
+
+      <!-- Menu -->
+      <section class="menu" id="menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-8 m-auto">
+              <h2 class="menu__title">We Present You Our Menu</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex flex-wrap">
+              <article class="dish d-flex">
+                <div class="dish__img">
+                  <img src="img/food/food01.jpg" alt="food image">
+                </div>
+                <div class="dish__content">
+                  <h3 class="dish__title">Pizza Margarita</h3>
+                  <p class="dish__text">
+                    Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                    Cras ultricies ligula.
+                  </p>
+                  <div class="dish__price">19.99$</div>
+                </div>
+              </article>
+              <article class="dish d-flex">
+                <div class="dish__img">
+                  <img src="img/food/food02.jpg" alt="food image">
+                </div>
+                <div class="dish__content">
+                  <h3 class="dish__title">Pizza Margarita</h3>
+                  <p class="dish__text">
+                    Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                    Cras ultricies ligula.
+                  </p>
+                  <div class="dish__price">19.99$</div>
+                </div>
+              </article>
+              <article class="dish d-flex">
+                <div class="dish__img">
+                  <img src="img/food/food03.jpg" alt="food image">
+                </div>
+                <div class="dish__content">
+                  <h3 class="dish__title">Pizza Margarita</h3>
+                  <p class="dish__text">
+                    Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                    Cras ultricies ligula.
+                  </p>
+                  <div class="dish__price">19.99$</div>
+                </div>
+              </article>
+              <article class="dish d-flex">
+                <div class="dish__img">
+                  <img src="img/food/food04.jpg" alt="food image">
+                </div>
+                <div class="dish__content">
+                  <h3 class="dish__title">Pizza Margarita</h3>
+                  <p class="dish__text">
+                    Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                    Cras ultricies ligula.
+                  </p>
+                  <div class="dish__price">19.99$</div>
+                </div>
+              </article>
+              <article class="dish d-flex">
+                <div class="dish__img">
+                  <img src="img/food/food05.jpg" alt="food image">
+                </div>
+                <div class="dish__content">
+                  <h3 class="dish__title">Pizza Margarita</h3>
+                  <p class="dish__text">
+                    Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                    Cras ultricies ligula.
+                  </p>
+                  <div class="dish__price">19.99$</div>
+                </div>
+              </article>
+
+              <article class="dish d-flex">
+                <div class="dish__img">
+                  <img src="img/food/food06.jpg" alt="food image">
+                </div>
+                <div class="dish__content">
+                  <h3 class="dish__title">Pizza Margarita</h3>
+                  <p class="dish__text">
+                    Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                    Cras ultricies ligula.
+                  </p>
+                  <div class="dish__price">19.99$</div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 m-auto">
+              <a href="#" class="more">
+                <span>Show Me More</span>
+                <div class="circle d-flex justify-content-center align-items-center m-auto">
+                  <svg class="circle__icon">
+                    <use xlink:href="#down"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--/ Menu  -->
+
+      <!-- Video -->
+      <section class="video d-flex align-items-center" id="video">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 m-auto">
+              <p class="video__title">See it for yourself</p>
+              <button class="play-btn"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--/ Video  -->
+
+      <!-- Subscribe -->
+      <section class="subscribe" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-10 m-auto">
+              <h2 class="subscribe__title">Stay up to sate</h2>
+              <p class="subscribe__subtitle">
+                Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras
+                ultricies ligula sed magna dictum porta. Donec sollicitudin molestie
+                malesuada.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-6 m-auto">
+              <form action="#" class="subscribe__form d-flex justify-content-center">
+                <input type="text" class="email" placeholder="Email Address">
+                <button class="btn subscribe__btn">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--/ Subscribe  -->
+
+      <!-- Random -->
+      <section class="random">
+        <div class="container">
+          <div class="random__inner d-flex">
+            <div class="random-item" tabindex="0">
+              <img src="img/random/food01.jpg" alt="food image">
+              <div class="random-item__content">
+                <h4 class="random-item__title">Pizza Margarita</h4>
+                <p class="random-item__text">
+                  Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                  Cras ultricies ligula.
+                </p>
+                <div class="random-item__price">19.99$</div>
+              </div>
+            </div>
+            <div class="random-item" tabindex="0">
+              <img src="img/random/food02.jpg" alt="food image">
+              <div class="random-item__content">
+                <h4 class="random-item__title">Pizza Margarita</h4>
+                <p class="random-item__text">
+                  Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                  Cras ultricies ligula.
+                </p>
+                <div class="random-item__price">19.99$</div>
+              </div>
+            </div>
+            <div class="random-item" tabindex="0">
+              <img src="img/random/food03.jpg" alt="food image">
+              <div class="random-item__content">
+                <h4 class="random-item__title">Pizza Margarita</h4>
+                <p class="random-item__text">
+                  Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                  Cras ultricies ligula.
+                </p>
+                <div class="random-item__price">19.99$</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--/ Random  -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__info">
+        <div class="container">
+          <div class="row d-flex justify-content-between flex-column flex-lg-row">
+            <div class="col-sm-10 col-md-8 col-lg-5">
+              <div class="footer__title">Location</div>
+              <ul class="footer__list d-flex justify-content-sm-between">
+                <li class="footer__text">
+                  678 Some Awesome
+                  <span>Brooklyn,NY -112233</span>
+                </li>
+                <li class="footer__text">
+                  678 Some Awesome
+                  <span>Brooklyn,NY -112233</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-10 col-md-8 col-lg-5">
+              <div class="footer__title">Hours</div>
+              <ul class="footer__list d-flex justify-content-sm-between">
+                <li class="footer__text">
+                  Monday - Thursday
+                  <span>08:00am - 11:00pm</span>
+                </li>
+                <li class="footer__text">
+                  Monday - Thursday
+                  <span>08:00am - 11:00pm</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="row d-flex justify-content-between">
+            <div class="col-md-8 col-lg-6 col-xl-5">
+              <div class="footer__text">
+                Copyright 2017 © Foody - All Rights Reserved
+              </div>
+            </div>
+            <div class="col-md-2">
+              <ul class="social d-flex justify-content-between">
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg class="social__icon facebook">
+                      <use xlink:href="#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg class="social__icon twitter">
+                      <use xlink:href="#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <svg class="social__icon instagram">
+                      <use xlink:href="#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--/ Footer  -->
+
+
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+    <!-- Livereload -->
+    <script>
+      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+  </body>
+</html>
+
